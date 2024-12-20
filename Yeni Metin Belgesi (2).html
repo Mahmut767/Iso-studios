@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İso Studios - Anket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="rainbow-text">İso Studios</h1>
+        <p>Heyecan verici bir anket!</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <!-- Soru 1 -->
+            <div class="question">
+                <label for="legend-name">Soru 1: Hangi Efsane?</label>
+                <input type="text" id="legend-name" name="legend-name" placeholder="Efsane ismini yazın..." required>
+            </div>
+
+            <!-- Soru 2 -->
+            <div class="question">
+                <label for="family-tree">Soru 2: Soy ağacında dolu mu?</label>
+                <input type="text" id="family-tree" name="family-tree" placeholder="Evet ya da hayır yazın..." required>
+            </div>
+
+            <!-- Soru 3 -->
+            <div class="question">
+                <label for="legend-details">Soru 3: Efsanenin özellikleri</label>
+                <textarea id="legend-details" name="legend-details" rows="15" placeholder="Efsanenin özelliklerini buraya yazın..." required></textarea>
+            </div>
+
+            <!-- Soru 4 -->
+            <div class="question">
+                <label>Soru 4: Kuralları kabul ediyor musunuz?</label>
+                <div class="options">
+                    <label><input type="radio" name="rules" value="Evet" required> Evet</label>
+                    <label><input type="radio" name="rules" value="Hayır" required> Hayır</label>
+                </div>
+            </div>
+
+            <!-- Soru 5 -->
+            <div class="question">
+                <label for="pp-name">Soru 5: Pp'yi ve ismi efsaneninki gibi yapacak mısın?</label>
+                <input type="text" id="pp-name" name="pp-name" placeholder="Evet ya da hayır yazın..." required>
+            </div>
+
+            <!-- Soru 6 -->
+            <div class="question">
+                <label>Soru 6: Soy ağacında dolu mu?</label>
+                <div class="options">
+                    <label><input type="radio" name="family-tree-check" value="Evet" required> Evet</label>
+                    <label><input type="radio" name="family-tree-check" value="Hayır" required> Hayır</label>
+                </div>
+            </div>
+
+            <!-- Gönder Butonu -->
+            <div class="submit-button">
+                <button type="submit">Anketi Tamamla</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 - İso Studios</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
